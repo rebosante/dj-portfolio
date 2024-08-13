@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Planet N';
+    src: url('PlanetN.eot');
+    src: url('PlanetN.eot?#iefix') format('embedded-opentype'),
+        url('PlanetN.woff2') format('woff2'),
+        url('PlanetN.woff') format('woff'),
+        url('PlanetN.ttf') format('truetype'),
+        url('PlanetN.svg#PlanetN') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

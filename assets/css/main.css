@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --jay-yellow: #e7b700;
+  --jay-beige-dark: #D9CFB4;
+  --jay-beige-light: #F6F5ED;
+  --font-size: 14px;
+  --jay-scroll-1: #827c6c;
+  --jay-scroll-2: #575348;
+}
+
+@font-face {
+  font-family: 'Jay';
+  src: url('../fonts/PlanetN.eot');
+  src: url('../fonts/PlanetN.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/PlanetN.woff2') format('woff2'),
+      url('../fonts/PlanetN.woff') format('woff'),
+      url('../fonts/PlanetN.ttf') format('truetype'),
+      url('../fonts/PlanetN.svg#PlanetN') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.jay-font {
+  font-family: 'Jay';
+}
+
+html {
+  scrollbar-color: var(--jay-scroll-1) var(--jay-scroll-2);
+}
+
+body {
+    background-color: aquamarine;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+
+  .h-jcam {
+    height: calc(100vh - 40px);
+  }
+  .w-jcam {
+    width: calc(100vw - 40px);
+  }
+
+  /* Define the transition styles */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s ease-in-out;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+
+.scroll-aspect {
+  scrollbar-color: var(--jay-scroll-1) var(--jay-scroll-2);
+}
