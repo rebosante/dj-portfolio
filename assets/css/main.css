@@ -4,6 +4,13 @@
 
 :root {
   --jay-yellow: #e7b700;
+  --jay-yellow-hover: #d0a500;
+  --jay-yellow-light: #e9be1a;
+  --jay-yellow-lighter: #f1d466;
+  --jay-yellow-lightest: #f5f7ff;
+  --jay-yellow-dark: #d0a500;
+  --jay-yellow-darker: #745c00;
+  --jay-yellow-darkest: #453700;
   --jay-beige-dark: #D9CFB4;
   --jay-beige-light: #F6F5ED;
   --font-size: 14px;
@@ -24,8 +31,42 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Jay H';
+  src: url('../fonts/IBMPlexSans-SemiBold.eot');
+  src: url('../fonts/IBMPlexSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/IBMPlexSans-SemiBold.woff2') format('woff2'),
+      url('../fonts/IBMPlexSans-SemiBold.woff') format('woff'),
+      url('../fonts/IBMPlexSans-SemiBold.ttf') format('truetype'),
+      url('../fonts/IBMPlexSans-SemiBold.svg#IBMPlexSans-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jay P';
+  src: url('../fonts/DMSans18pt-Light.eot');
+  src: url('../fonts/DMSans18pt-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/DMSans18pt-Light.woff2') format('woff2'),
+      url('../fonts/DMSans18pt-Light.woff') format('woff'),
+      url('../fonts/DMSans18pt-Light.ttf') format('truetype'),
+      url('../fonts/DMSans18pt-Light.svg#DMSans18pt-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 .jay-font {
   font-family: 'Jay';
+}
+
+.jay-p {
+  font-family: 'Jay P';
+}
+
+.jay-h {
+  font-family: 'Jay H';
 }
 
 html {
@@ -34,20 +75,46 @@ html {
 
 body {
     background-color: aquamarine;
-    font-family: Arial, sans-serif;
+    font-family: 'Jay P', Arial, sans-serif;
     margin: 0;
     padding: 0;
   }
   
-  h1, h2 {
-    color: #333;
+  h1, h2, h3, h4 {
+    color: #747373;
+    font-family: 'Jay H';
+  }
+
+  p{
+    font-family: 'Jay P';
+  }
+
+  .w-jcam {
+    width: calc(100vw - 20px);
   }
 
   .h-jcam {
-    height: calc(100vh - 40px);
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
-  .w-jcam {
-    width: calc(100vw - 40px);
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .h-jcam {
+      height: 100%;
+    }
+    .w-jcam {
+      width: calc(100vw - 20px);
+    }
+  }
+  /* media queries */
+
+  @media (min-width: 1024px) {
+    .h-jcam {
+      height: calc(100vh - 40px);
+    }
+    .w-jcam {
+      width: calc(100vw - 40px);
+    }
   }
 
   /* Define the transition styles */

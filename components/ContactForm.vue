@@ -15,13 +15,13 @@
         </div>
         <button type="submit">Send</button>
       </!-->
-      <div class="grid sm:grid-cols-2 items-start gap-16 p-4 mx-auto max-w-4xl font-[sans-serif]">
+      <div class="grid sm:grid-cols-2 items-start gap-16 mx-auto max-w-4xl font-[sans-serif]">
             <div>
-                <h1 class="text-gray-800 text-3xl font-extrabold">Let's Talk</h1>
-                <p class="text-sm text-gray-500 mt-4">Have some big idea or brand to develop and need help? Then reach out we'd love to hear about your project  and provide help.</p>
+                <h1 class="text-3xl font-extrabold">{{ $t('home.contact') }}</h1>
+                <p class="text-sm mt-4">Have some big idea or brand to develop and need help? Then reach out we'd love to hear about your project  and provide help.</p>
 
                 <div class="mt-12">
-                    <h2 class="text-gray-800 text-base font-bold">Email</h2>
+                    <h2 class="text-base font-bold">Email</h2>
                     <ul class="mt-4">
                         <li class="flex items-center">
                             <div class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
@@ -41,36 +41,106 @@
                 </div>
             </div>
 
-            <form class="ml-auto space-y-4">
-                <input type='text' placeholder='Name'
-                    class="w-full rounded-md py-3 px-4 bg-gray-100 text-gray-800 text-sm outline-blue-500 focus:bg-transparent" />
-                <input type='email' placeholder='Email'
-                    class="w-full rounded-md py-3 px-4 bg-gray-100 text-gray-800 text-sm outline-blue-500 focus:bg-transparent" />
-                <input type='text' placeholder='Subject'
-                    class="w-full rounded-md py-3 px-4 bg-gray-100 text-gray-800 text-sm outline-blue-500 focus:bg-transparent" />
-                <textarea placeholder='Message' rows="6"
-                    class="w-full rounded-md px-4 bg-gray-100 text-gray-800 text-sm pt-3 outline-blue-500 focus:bg-transparent"></textarea>
-                <button type='button'
-                    class="text-white bg-blue-500 hover:bg-blue-600 tracking-wide rounded-md text-sm px-4 py-3 w-full !mt-6">Send</button>
+            <form @submit.prevent="submitForm" class="ml-auto space-y-4">
+              <input v-model.trim="form.name" type="text" id="contact_name" name="contact_name" class="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-blue-500 focus:bg-transparent" placeholder="Name" />
+                <span v-if="errors.nameError" class="error">{{ errors.nameError }}</span>
+              <input v-model.trim="form.email" type="email" id="contact_email" name="contact_email" class="w-full rounded-md py-3 px-4 bg-gray-100 text-sm outline-blue-500 focus:bg-transparent" placeholder="Email" />
+                <span v-if="errors.emailError" class="error">{{ errors.emailError }}</span>
+              <textarea v-model.trim="form.message" rows="5" id="contact_message" name="contact_message" class="w-full rounded-md px-4 bg-gray-100 text-sm pt-3 outline-blue-500 focus:bg-transparent" placeholder="Message"></textarea>
+                  <span v-if="errors.messageError" class="error">{{ errors.messageError }}</span>
+                  <br v-if="errors.generalMessage" />
+                  <span v-if="errors.generalMessage" class="error">{{ errors.generalMessage }}</span>
+              <button type="submit" class="text-white bg-blue-500 hover:bg-blue-600 tracking-wide rounded-md text-sm px-4 py-3 w-full !mt-6">{{ t('send') }}</button>
             </form>
         </div>
+        <div><a :href="getLinkWhatsApp('+34655834612', t('contact.message_whatsapp'))" target="_blank">Whatsapp</a></div>
     </div>
   </template>
   
-  <script setup>
-  import { ref } from 'vue'
-  
-  const form = ref({
-    name: '',
-    email: '',
-    message: ''
-  })
-  
-  function submitForm() {
-    console.log('Form submitted:', form.value)
-    // Handle form submission, e.g., send the data to an API
+  <script setup lang="ts">
+import { ref, reactive, watch, computed } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
+
+const form = reactive({
+  name: '',
+  email: '',
+  message: '',
+});
+
+const errors = reactive({
+  nameError: '',
+  emailError: '',
+  messageError: '',
+  generalMessage: '',
+});
+
+const waiting = ref(false);
+const checkFields = ref(false);
+
+// Function to validate the name
+const validateName = () => {
+  errors.nameError = !form.name.trim() ? 'Name is required' : '';
+};
+
+// Function to validate the email
+const validateEmail = () => {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  errors.emailError = !emailRegex.test(form.email) ? 'Please enter a valid email address' : '';
+};
+
+// Function to validate the message
+const validateMessage = () => {
+  errors.messageError = !form.message.trim() ? 'Message is required' : '';
+};
+
+// Function to get WhatsApp link
+const getLinkWhatsApp = (number: string, message: string) => {
+  return `https://api.whatsapp.com/send?phone=${number}&text=${encodeURIComponent(message)}`;
+};
+
+// Form submission handler
+const submitForm = async () => {
+  checkFields.value = true;
+
+  // Validate fields before sending the form
+  validateName();
+  validateEmail();
+  validateMessage();
+
+  if (!form.name.trim() || errors.emailError || !form.message.trim()) {
+    errors.generalMessage = 'Please fill all fields';
+    return;
   }
-  </script>
+  errors.generalMessage = '';
+
+  waiting.value = true;
+  const newURL = window.location.protocol + '//' + window.location.host;
+
+  await $fetch(newURL + '/api/contact', {
+    method: 'POST',
+    body: {
+      name: form.name,
+      email: 'info@osteorevolucion.com',
+      subject: t('contact.mail_subject'),
+      message: form.message + ' ++++ RECEIVED FROM ++++ ' + form.email,
+    },
+  }).then(() => {
+    checkFields.value = false;
+    form.name = '';
+    form.email = '';
+    form.message = '';
+    errors.generalMessage = t('contact.sent_succesfully');
+    waiting.value = false;
+  });
+};
+
+// Watchers for real-time validation
+watch(() => form.name, validateName);
+watch(() => form.email, validateEmail);
+watch(() => form.message, validateMessage);
+</script>
   
   <style scoped>
   /* Add your styles here */

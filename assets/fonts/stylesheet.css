@@ -1,4 +1,30 @@
 @font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('IBMPlexSans-SemiBold.eot');
+    src: url('IBMPlexSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('IBMPlexSans-SemiBold.woff2') format('woff2'),
+        url('IBMPlexSans-SemiBold.woff') format('woff'),
+        url('IBMPlexSans-SemiBold.ttf') format('truetype'),
+        url('IBMPlexSans-SemiBold.svg#IBMPlexSans-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans 18pt';
+    src: url('DMSans18pt-Light.eot');
+    src: url('DMSans18pt-Light.eot?#iefix') format('embedded-opentype'),
+        url('DMSans18pt-Light.woff2') format('woff2'),
+        url('DMSans18pt-Light.woff') format('woff'),
+        url('DMSans18pt-Light.ttf') format('truetype'),
+        url('DMSans18pt-Light.svg#DMSans18pt-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Planet N';
     src: url('PlanetN.eot');
     src: url('PlanetN.eot?#iefix') format('embedded-opentype'),

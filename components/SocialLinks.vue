@@ -1,6 +1,6 @@
 <template>
     <div class="mt-12">
-                    <h2 class="text-gray-800 text-base font-bold">Socials</h2>
+                    <h2 class="text-base font-bold">Socials</h2>
 
                     <ul class="flex mt-4 space-x-4">
                         <li class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">

@@ -1,7 +1,7 @@
 <template>
     <div>
       <h2>Bio</h2>
-      <p class="text-base text-gray-600">
+      <p class="text-base">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed metus ultricies, tincidunt dui id, ultrices augue. Donec tristique sapien eu leo semper vestibulum. Donec non lectus a sapien mattis blandit.
       </p>
     </div>
