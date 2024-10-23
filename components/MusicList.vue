@@ -4,7 +4,7 @@
 
 <div class="text-jayge-200 dark:bg-gray-800 dark:border-gray-700">
   <div class="flex justify-between items-center mb-4">
-      <h3 class="text-xl font-bold leading-none text-jayge-200">Music sets and productions</h3>
+      <h3 class="text-xl font-bold leading-none text-jayge-200 typewriter" v-typewriter>Music sets and productions</h3>
       <a href="#" class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
           View all
       </a>
@@ -56,10 +56,10 @@
       </ul>
  </div>
 </div>
-<p class="mt-5">This card component is part of a larger, open-source library of Tailwind CSS components. Learn more
-  by going to the official <a class="text-blue-600 hover:underline"
-    href="#" target="_blank">Flowbite Documentation</a>.
-</p>
+<p class="mt-5 typewriter" v-typewriter>
+    This component is part of a larger, open-source library of great components. Learn more
+    by going to the official <a class="text-blue-600 hover:underline" href="#" target="_blank">MyExample Documentation</a>.
+  </p>
 </div>
     </div>
   </template>

@@ -33,26 +33,26 @@
 
 @font-face {
   font-family: 'Jay H';
-  src: url('../fonts/IBMPlexSans-SemiBold.eot');
-  src: url('../fonts/IBMPlexSans-SemiBold.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/IBMPlexSans-SemiBold.woff2') format('woff2'),
-      url('../fonts/IBMPlexSans-SemiBold.woff') format('woff'),
-      url('../fonts/IBMPlexSans-SemiBold.ttf') format('truetype'),
-      url('../fonts/IBMPlexSans-SemiBold.svg#IBMPlexSans-SemiBold') format('svg');
-  font-weight: 600;
+  src: url('../fonts/BlenderPro-Bold.eot');
+  src: url('../fonts/BlenderPro-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/BlenderPro-Bold.woff2') format('woff2'),
+      url('../fonts/BlenderPro-Bold.woff') format('woff'),
+      url('../fonts/BlenderPro-Bold.ttf') format('truetype'),
+      url('../fonts/BlenderPro-Bold.svg#BlenderPro-Bold') format('svg');
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Jay P';
-  src: url('../fonts/DMSans18pt-Light.eot');
-  src: url('../fonts/DMSans18pt-Light.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/DMSans18pt-Light.woff2') format('woff2'),
-      url('../fonts/DMSans18pt-Light.woff') format('woff'),
-      url('../fonts/DMSans18pt-Light.ttf') format('truetype'),
-      url('../fonts/DMSans18pt-Light.svg#DMSans18pt-Light') format('svg');
-  font-weight: 300;
+  src: url('../fonts/ShareTechMono-Regular.eot');
+  src: url('../fonts/ShareTechMono-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/ShareTechMono-Regular.woff2') format('woff2'),
+      url('../fonts/ShareTechMono-Regular.woff') format('woff'),
+      url('../fonts/ShareTechMono-Regular.ttf') format('truetype'),
+      url('../fonts/ShareTechMono-Regular.svg#ShareTechMono-Regular') format('svg');
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
@@ -71,6 +71,7 @@
 
 html {
   scrollbar-color: var(--jay-scroll-1) var(--jay-scroll-2);
+  font-size: var(--font-size);
 }
 
 body {

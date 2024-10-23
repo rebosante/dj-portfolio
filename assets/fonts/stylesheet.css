@@ -1,37 +1,11 @@
 @font-face {
-    font-family: 'IBM Plex Sans';
-    src: url('IBMPlexSans-SemiBold.eot');
-    src: url('IBMPlexSans-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('IBMPlexSans-SemiBold.woff2') format('woff2'),
-        url('IBMPlexSans-SemiBold.woff') format('woff'),
-        url('IBMPlexSans-SemiBold.ttf') format('truetype'),
-        url('IBMPlexSans-SemiBold.svg#IBMPlexSans-SemiBold') format('svg');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'DM Sans 18pt';
-    src: url('DMSans18pt-Light.eot');
-    src: url('DMSans18pt-Light.eot?#iefix') format('embedded-opentype'),
-        url('DMSans18pt-Light.woff2') format('woff2'),
-        url('DMSans18pt-Light.woff') format('woff'),
-        url('DMSans18pt-Light.ttf') format('truetype'),
-        url('DMSans18pt-Light.svg#DMSans18pt-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Planet N';
-    src: url('PlanetN.eot');
-    src: url('PlanetN.eot?#iefix') format('embedded-opentype'),
-        url('PlanetN.woff2') format('woff2'),
-        url('PlanetN.woff') format('woff'),
-        url('PlanetN.ttf') format('truetype'),
-        url('PlanetN.svg#PlanetN') format('svg');
+    font-family: 'Share Tech Mono';
+    src: url('ShareTechMono-Regular.eot');
+    src: url('ShareTechMono-Regular.eot?#iefix') format('embedded-opentype'),
+        url('ShareTechMono-Regular.woff2') format('woff2'),
+        url('ShareTechMono-Regular.woff') format('woff'),
+        url('ShareTechMono-Regular.ttf') format('truetype'),
+        url('ShareTechMono-Regular.svg#ShareTechMono-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

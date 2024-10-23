@@ -18,7 +18,7 @@
       <div class="grid sm:grid-cols-2 items-start gap-16 mx-auto max-w-4xl font-[sans-serif]">
             <div>
                 <h1 class="text-3xl font-extrabold">{{ $t('home.contact') }}</h1>
-                <p class="text-sm mt-4">Have some big idea or brand to develop and need help? Then reach out we'd love to hear about your project  and provide help.</p>
+                <p class="text-sm mt-4 typewriter" v-typewriter>Have some big idea or brand to develop and need help? Then reach out we'd love to hear about your project  and provide help.</p>
 
                 <div class="mt-12">
                     <h2 class="text-base font-bold">Email</h2>
