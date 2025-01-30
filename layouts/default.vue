@@ -1,5 +1,5 @@
 <template>
-  <div class="relative md:h-dvh flex flex-col justify-center lg:overflow-hidden bg-jayge-100">
+  <div class="relative flex flex-col justify-center lg:overflow-hidden bg-jayge-100 custom-mq">
     <div class="relative flex items-center h-jcam w-jcam bg-jayllow-500 pl-2 lg:pl-6 pr-2 md:pr-0 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 mx-auto rounded-xl lg:rounded-3xl">
       <div class="mx-auto w-full">
         <div class="flex items-center w-full flex-col md:flex-row">
@@ -334,5 +334,10 @@
     width: 60%;
   }
  }
+ @media (max-height: 690px) {
+    .lg\:overflow-hidden {
+        overflow: unset;
+    }
+}
 </style>
   

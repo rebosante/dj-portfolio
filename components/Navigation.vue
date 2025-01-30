@@ -81,12 +81,12 @@ a.active {
 
 /* glitch */
 .glitch-text {
-  color: white;
+  color: var(--jay-scroll-2);
   position: relative;
   font-size: 16px;
 }
 .glitch-text:hover::before, .glitch-text:hover::after {
-  color: white;
+  color: var(--jay-yellow-lightest);
   content: attr(data-letters);
   position: absolute;
   width: 100%;
@@ -118,132 +118,132 @@ a.active {
 
 @keyframes glitch-animation-1 {
   0% {
-    clip: rect(2px, 150px, 1px, 10px);
+    clip: rect(2px, 150px, 1px, -10px);
   }
   5% {
-    clip: rect(4px, 150px, 11px, 10px);
+    clip: rect(4px, 150px, 11px, -10px);
   }
   10% {
-    clip: rect(1px, 150px, 33px, 10px);
+    clip: rect(1px, 150px, 33px, -10px);
   }
   15% {
-    clip: rect(1px, 150px, 37px, 10px);
+    clip: rect(1px, 150px, 37px, -10px);
   }
   20% {
-    clip: rect(1px, 150px, 39px, 10px);
+    clip: rect(1px, 150px, 39px, -10px);
   }
   25% {
-    clip: rect(2px, 150px, 7px, 10px);
+    clip: rect(2px, 150px, 7px, -10px);
   }
   30% {
-    clip: rect(3px, 150px, 34px, 10px);
+    clip: rect(3px, 150px, 34px, -10px);
   }
   35% {
-    clip: rect(4px, 150px, 33px, 10px);
+    clip: rect(4px, 150px, 33px, -10px);
   }
   40% {
-    clip: rect(5px, 150px, 15px, 10px);
+    clip: rect(5px, 150px, 15px, -10px);
   }
   45% {
-    clip: rect(1px, 150px, 1px, 10px);
+    clip: rect(1px, 150px, 1px, -10px);
   }
   50% {
-    clip: rect(4px, 150px, 35px, 10px);
+    clip: rect(4px, 150px, 35px, -10px);
   }
   55% {
-    clip: rect(1px, 150px, 6px, 10px);
+    clip: rect(1px, 150px, 6px, -10px);
   }
   60% {
-    clip: rect(1px, 150px, 3px, 10px);
+    clip: rect(1px, 150px, 3px, -10px);
   }
   65% {
-    clip: rect(1px, 150px, 12px, 10px);
+    clip: rect(1px, 150px, 12px, -10px);
   }
   70% {
-    clip: rect(1px, 150px, 26px, 10px);
+    clip: rect(1px, 150px, 26px, -10px);
   }
   75% {
-    clip: rect(3px, 150px, 38px, 10px);
+    clip: rect(3px, 150px, 38px, -10px);
   }
   80% {
-    clip: rect(4px, 150px, 40px, 10px);
+    clip: rect(4px, 150px, 40px, -10px);
   }
   85% {
-    clip: rect(4px, 150px, 13px, 10px);
+    clip: rect(4px, 150px, 13px, -10px);
   }
   90% {
-    clip: rect(4px, 150px, 13px, 10px);
+    clip: rect(4px, 150px, 13px, -10px);
   }
   95% {
-    clip: rect(3px, 150px, 30px, 10px);
+    clip: rect(3px, 150px, 30px, -10px);
   }
   100% {
-    clip: rect(1px, 150px, 8px, 10px);
+    clip: rect(1px, 150px, 8px, -10px);
   }
 }
 @keyframes glitch-animation-2 {
   0% {
-    clip: rect(1px, 150px, 37px, 10px);
+    clip: rect(1px, 150px, 37px, -10px);
   }
   5% {
-    clip: rect(1px, 150px, 20px, 10px);
+    clip: rect(1px, 150px, 20px, -10px);
   }
   10% {
-    clip: rect(2px, 150px, 39px, 10px);
+    clip: rect(2px, 150px, 39px, -10px);
   }
   15% {
-    clip: rect(1px, 150px, 38px, 10px);
+    clip: rect(1px, 150px, 38px, -10px);
   }
   20% {
-    clip: rect(1px, 150px, 10px, 10px);
+    clip: rect(1px, 150px, 10px, -10px);
   }
   25% {
-    clip: rect(3px, 150px, 3px, 10px);
+    clip: rect(3px, 150px, 3px, -10px);
   }
   30% {
-    clip: rect(2px, 150px, 35px, 10px);
+    clip: rect(2px, 150px, 35px, -10px);
   }
   35% {
-    clip: rect(2px, 150px, 38px, 10px);
+    clip: rect(2px, 150px, 38px, -10px);
   }
   40% {
-    clip: rect(4px, 150px, 26px, 10px);
+    clip: rect(4px, 150px, 26px, -10px);
   }
   45% {
-    clip: rect(1px, 150px, 36px, 10px);
+    clip: rect(1px, 150px, 36px, -10px);
   }
   50% {
-    clip: rect(3px, 150px, 2px, 10px);
+    clip: rect(3px, 150px, 2px, -10px);
   }
   55% {
-    clip: rect(1px, 150px, 27px, 10px);
+    clip: rect(1px, 150px, 27px, -10px);
   }
   60% {
-    clip: rect(1px, 150px, 26px, 10px);
+    clip: rect(1px, 150px, 26px, -10px);
   }
   65% {
-    clip: rect(4px, 150px, 30px, 10px);
+    clip: rect(4px, 150px, 30px, -10px);
   }
   70% {
-    clip: rect(1px, 150px, 40px, 10px);
+    clip: rect(1px, 150px, 40px, -10px);
   }
   75% {
-    clip: rect(2px, 150px, 18px, 10px);
+    clip: rect(2px, 150px, 18px, -10px);
   }
   80% {
-    clip: rect(1px, 150px, 10px, 10px);
+    clip: rect(1px, 150px, 10px, -10px);
   }
   85% {
-    clip: rect(4px, 150px, 9px, 10px);
+    clip: rect(4px, 150px, 9px, -10px);
   }
   90% {
-    clip: rect(4px, 150px, 21px, 10px);
+    clip: rect(4px, 150px, 21px, -10px);
   }
   95% {
-    clip: rect(3px, 150px, 8px, 10px);
+    clip: rect(3px, 150px, 8px, -10px);
   }
   100% {
-    clip: rect(1px, 150px, 22px, 10px);
+    clip: rect(1px, 150px, 22px, -10px);
   }
 }
 </style>
