@@ -1,9 +1,7 @@
 <template>
     <div>
-      <h2>Bio</h2>
-      <p class="text-base">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed metus ultricies, tincidunt dui id, ultrices augue. Donec tristique sapien eu leo semper vestibulum. Donec non lectus a sapien mattis blandit.
-      </p>
+      <h2 class="text-2xl font-extrabold typewriter" v-typewriter>{{ $t('bio.title') }}</h2>
+      <div class="text-base typewriter mb-6" v-typewriter v-html="$t('bio.bio_txt')" />
     </div>
   </template>
   

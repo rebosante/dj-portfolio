@@ -1,7 +1,39 @@
 {
-    "home": {
-      "welcome": "Bienve to my DJ portfolio",
-      "about": "Acerca Me",
-      "contact": "Contacta Me"
-    }
+  "nav": {
+    "home": "Inicio",
+    "about": "Info",
+    "contact": "Contacto"
+  },
+  "home": {
+    "welcome": "Jay Cam - Un viaje a través del HOUSE MUSIC",
+    "about": "Acerca de mí",
+    "contact": "Contáctame"
+  },
+  "welcome": {
+    "txt_1": "Bienvenido a mi portafolio. Soy JAY, DJ con una dedicación absoluta al house music. Con más de 25 años de experiencia, mis sets son una fusión de Soul, Funky, Deep y ritmos afro latinos. ¡Descubre mi música y conectemos a través de los beats!",
+    "txt_2": "Number dos",
+    "txt_3": "Tres Number tres",
+    "txt_4": "Catre catrate",
+    "txt_5": "Cincuanta dos"
+  },
+  "music": {
+    "mixcloud": "Algunos de estos sets se grabaron en diferentes eventos y otros se han extraído de Mixapolis Radio, una estación que fundé a principios de los 2000 y que permaneció en vivo hasta 2017, año en el que se produjo su última transmisión. Puedes disfrutar de la página oficial en <a class='text-blue-600 hover:underline' href='https://www.mixcloud.com/mixapolis/' target='_blank'>Mixcloud</a>.",
+    "frame_title": "MIS ÚLTIMOS SETS EN VIVO",
+    "view_all": "Ver Todos"
+  },
+  "bio": {
+    "title": "Ritmos Old-School, Sonidos del Futuro",
+    "bio_txt": "<p class='mt-4'>Nací y crecí en la selva tropical de Sudamérica, donde mi amor por la música comenzó desde muy pequeño. Años después, siendo aún un adolescente, ya tocaba en fiestas, disco móviles y clubs.. ¡incluso cuando no tenía la edad legal para entrar! Los dueños de los clubes le pedían permiso a mis padres para que yo pudiera ir a tocar (pinchar). Mi viaje comenzó mezclando cintas de cassette en la radio, junto con algunos amigos, luego pasé a presentarme en pequeños bares, pubs y clubes. Con los años, estuve en distintas ciudades.. países, tocando en eventos, programas de radio y diferentes tipos de fiestas, abriéndome camino en el mundo de la música House. Exploré y me incliné por varios estilos: Soulful, Funky, Deep, Afro, Latin y más..</p> <p class='mt-4'>Me retiré oficialmente a los 30 años, pero cuando mi hijo comenzó a crecer, redescubrí mi pasión por la música como un hobby. Hoy, sigo compartiendo mi amor por el House music, fusionando los ritmos old-school con los grooves del futuro, y creando experiencias inolvidables en la pista de baile. La música es mi viaje de vida, y estoy aquí para hacerte sentirla.</p><p class='mt-4'>A principios de los 2000, fundé Mixapolis Radio, una plataforma que se convirtió en un punto de encuentro para los amantes del house music alrededor del mundo. Durante más de 15 años, Mixapolis Radio reunió a DJs de todos los rincones del planeta, muchos de ellos participaron con la ilusión de ser escuchados por todo el globo.. por suerte pudimos hacerlo y disfrutamos creando momentos inolvidables y fomentando una conexión profunda con nuestros oyentes más fieles. En ese tiempo, tuvimos el honor de recibir a personalidades icónicas de la escena house, como Demarkus Lewis, DJ Sandrinha, Hugo Valle, DJ Pako, Discotizer, y muchos más.</p><p>Esos años estuvieron llenos de aprendizaje, crecimiento y una profunda apreciación por la cultura del house music. Mixapolis Radio no fue solo una plataforma—fue una comunidad que celebró el alma, el ritmo y la diversidad de la música house. Aunque su última emisión fue en 2017, los recuerdos y el impacto que creó siguen resonando en todos los que fueron parte de este viaje.</p>"
+  },
+  "contact": {
+    "basic_txt": "¡Conectemos! Ya sea que quieras tenerme en un evento, colaborar en un proyecto o simplemente compartir tu amor por el house music, me encantaría saber de ti. Completa el formulario a continuación y te responderé lo antes posible. ¡Podemos crear algo fantástico juntos!",
+    "send": "Enviar Mensaje",
+    "name": "Nombre",
+    "email": "Email",
+    "message": "Mensaje",
+    "other": "Otros"
+  },
+  "social": {
+    "title": "Redes sociales"
   }
+}

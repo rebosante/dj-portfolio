@@ -1,7 +1,39 @@
 {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "contact": "Contact"
+    },
     "home": {
-      "welcome": "Welcome to my DJ portfolio",
+      "welcome": "JAY CAM - A journey thru House Music",
       "about": "About Me",
       "contact": "Contact Me"
+    },
+    "welcome": {
+      "txt_1": "Welcome to my portfolio. I’m Jay, a DJ with an absolute dedication to house music. With over 25 years of experience, my sets are a fusion of Soul, Funky, Deep, and Latin Sounds. Discover my vibes and let’s connect through the beats!",
+      "txt_2": "Number dos",
+      "txt_3": "Tres Number tres",
+      "txt_4": "Catre catrate",
+      "txt_5": "Cincuanta dos"
+    },
+    "music": {
+      "mixcloud": "Some of these sets were recorded at different events and also taken from Mixapolis Radio, a station that I founded in the early 2000s and that remained alive until 2017 when its last broadcast occurred. You can enjoy the official Mixapolis page on  <a class='text-blue-600 hover:underline' href='https://www.mixcloud.com/mixapolis/' target='_blank'>Mixcloud</a>.",
+      "frame_title": "MY LATEST SETS RECORDED LIVE",
+      "view_all": "View All"
+    },
+    "bio": {
+      "title": "Old School Grooves - Future Sounds",
+      "bio_txt": "<p class='mt-4'>I was born and raised in the tropical jungles of South America, where my love for music began at an early age. By my teenage years, I was already playing in clubs—even when I wasn’t old enough to enter! Club owners would ask my parents for permission to let me perform at their places. My journey started with mixing cassettes on radio shows, then moved to small pubs, bars, and clubs. Over the years, I traveled across different cities and countries, playing at events, radio shows, and clubs, carving my path in the world of House music. I explored and mastered various styles: Soulful, Funky, Deep, Afro, Latin, and more.</p> <p class='mt-4'>I officially retired at 30, but when my son started growing up, I rediscovered my passion for music as a hobby. Today, I continue to share my love for House music, blending old-school vibes with future grooves, and trying to create nice experiences on the dancefloor. Music is my lifelong journey, and I’m here to make people feel it. </p><p class='mt-4'>In the early 2000s, I founded Mixapolis Radio, a platform that became a hub for house music lovers worldwide. For over 15 years, Mixapolis Radio brought together DJs from across the globe, creating unforgettable moments and fostering a deep connection with our loyal listeners. During its run, we had the honor of hosting iconic personalities from the house scene, including Demarkus Lewis, DJ Sandrinha, Hugo Valle, DJ Pako, Discotizer, and many more. Even once we had the honor to have the legendary Frankie Knuckles, known as 'The Godfather of House,' chatting with us and listening to our grooves.</p><p>Those years were filled with learning, growth, and a profound appreciation for house music culture. Mixapolis Radio wasn’t just a platform.. it was a community that celebrated the soul, rhythm, and diversity of house music. Though its last broadcast was in 2017, the memories and impact it created continue to resonate with everyone who was part of this journey.</p>"
+    },
+    "contact": {
+      "basic_txt": "Let’s connect! Whether you’re looking to book me for an event, collaborate on a project, or just share your love for house music, I’d love to hear from you. Fill out the form below, and I’ll get back to you as soon as possible. Let’s create something unforgettable together!",
+      "send": "Send Message",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "other": "Others"
+    },
+    "social": {
+      "title": "Social Networks"
     }
   }

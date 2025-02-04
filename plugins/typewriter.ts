@@ -6,7 +6,7 @@ export default defineNuxtPlugin((nuxtApp) => {
           t.innerHTML = ""; // Clear the element to start the effect
   
           let cursorPosition = 0;
-          const typeSpeed = 100;
+          const typeSpeed = 10;
           let tempTypeSpeed = 0;
   
           // Recursive function to handle nodes
@@ -20,7 +20,7 @@ export default defineNuxtPlugin((nuxtApp) => {
                 if (index < text.length) {
                   parent.append(text[index]);
                   index++;
-                  tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+                  tempTypeSpeed = (Math.random() * typeSpeed) + 20;
                   setTimeout(typeChar, tempTypeSpeed);
                 } else {
                   cursorPosition++;

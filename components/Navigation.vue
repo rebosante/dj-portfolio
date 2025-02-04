@@ -2,19 +2,34 @@
   <nav>
     <div class="desktop-menu jay-font w-full text-sm lg:text-base">
       <ul class="flex items-center">
-        <li><NuxtLink :to="'/'" :class="{ active: $route.path === '/' }" data-letters="Home" class="glitch-text">Home</NuxtLink></li>
-        <li><NuxtLink :to="'/about'" :class="{ active: $route.path === '/about' }" data-letters="About" class="glitch-text">About</NuxtLink></li>
-        <li><NuxtLink :to="'/contact'" :class="{ active: $route.path === '/contact' }" data-letters="Contact" class="glitch-text">Contact</NuxtLink></li>
+        <li><NuxtLink :to="'/'" :class="{ active: $route.path === '/' }" :data-letters="$t('nav.home')" class="glitch-text">{{ $t('nav.home') }}</NuxtLink></li>
+        <li><NuxtLink :to="'/about'" :class="{ active: $route.path === '/about' }" :data-letters="$t('nav.about')" class="glitch-text">{{ $t('nav.about') }}</NuxtLink></li>
+        <li><NuxtLink :to="'/contact'" :class="{ active: $route.path === '/contact' }" :data-letters="$t('nav.contact')" class="glitch-text">{{ $t('nav.contact') }}</NuxtLink></li>
         <li class="grow text-right"><LanguageSwitcher /></li>
       </ul>
     </div>
     <div class="mobile-menu jay-font">
-      <button @click="toggleMenu">☰</button>
+      <button
+        @click="toggleMenu"
+        type="button"
+        data-twe-ripple-init
+        data-twe-ripple-color="light"
+        class="mb-2 inline-block text-sm text-jayge-800 focus:outline-none focus:ring-0">
+        <span class="[&>svg]:h-6 [&>svg]:w-6">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 448 512">
+            <!-- !Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. -->
+            <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+          </svg>
+        </span>
+      </button>
       <div v-if="menuOpen">
         <ul>
-          <li class="nav-link"><NuxtLink :to="'/'" :class="{ active: $route.path === '/' }">Home</NuxtLink></li>
-          <li class="nav-link"><NuxtLink :to="'/about'" :class="{ active: $route.path === '/about' }">About</NuxtLink></li>
-          <li class="nav-link"><NuxtLink :to="'/contact'" :class="{ active: $route.path === '/contact' }">Contact</NuxtLink></li>
+          <li class="nav-link font-bold"><NuxtLink :to="'/'" :class="{ active: $route.path === '/' }">{{ $t('nav.home') }}</NuxtLink></li>
+          <li class="nav-link font-bold"><NuxtLink :to="'/about'" :class="{ active: $route.path === '/about' }">{{ $t('nav.about') }}</NuxtLink></li>
+          <li class="nav-link font-bold"><NuxtLink :to="'/contact'" :class="{ active: $route.path === '/contact' }">{{ $t('nav.contact') }}</NuxtLink></li>
           <li><LanguageSwitcher /></li>
         </ul>
       </div>
@@ -85,6 +100,11 @@ a.active {
   position: relative;
   font-size: 16px;
 }
+.glitch-text.active {
+  color: black;
+  font-weight: bolder;
+}
+
 .glitch-text:hover::before, .glitch-text:hover::after {
   color: var(--jay-yellow-lightest);
   content: attr(data-letters);
