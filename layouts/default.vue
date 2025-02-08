@@ -15,9 +15,9 @@
             </div>
            </div>
           <!-- Second Column (80% width) -->
-          <div class="grow transition-height overflow-auto">
+          <div class="grow transition-height min-w-full md:min-w-[unset]">
             <Navigation />
-            <div class="text-jayge-200 bg-jayge-900 overflow-y-auto max-h-[600px] rounded-md md:rounded-l-lg md:rounded-r-none">
+            <div class="text-jayge-200 bg-jayge-900 overflow-y-auto max-h-[600px] rounded-md md:rounded-l-lg md:rounded-r-none relative">
               <NuxtPage class="change-height" />
             </div>
           </div>

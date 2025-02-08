@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-3xl mx-auto p-4">
+  <div class="max-w-4xl mx-auto p-4">
     <h2 class="text-3xl font-extrabold mb-4">
       {{ $t('home.about') }}
     </h2>

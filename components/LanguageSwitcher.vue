@@ -25,7 +25,7 @@ const changeLanguage = async (langCode: string) => {
     :class="{'active': locale === (typeof item === 'object' ? item.code : item)}"
     class="px-4 py-2 hover:bg-jayllow-400 text-xs" 
   >
-    {{ typeof item === "object" ? item.name.slice(0, 3) : item.slice(0, 3) }}
+    {{ typeof item === "object" ? item.name?.slice(0, 3) : String(item).slice(0, 3) }}
   </button>
 </template>
 

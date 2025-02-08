@@ -1,6 +1,6 @@
 <template>
     <div>
-      <div class="max-w-2xl mx-auto">
+      <div class="max-w-3xl mx-auto">
 
 <div class="text-jayge-200 dark:bg-gray-800 dark:border-gray-700">
   <div class="flex justify-between items-center mb-4">

@@ -4,6 +4,7 @@
       <ul class="flex items-center">
         <li><NuxtLink :to="'/'" :class="{ active: $route.path === '/' }" :data-letters="$t('nav.home')" class="glitch-text">{{ $t('nav.home') }}</NuxtLink></li>
         <li><NuxtLink :to="'/about'" :class="{ active: $route.path === '/about' }" :data-letters="$t('nav.about')" class="glitch-text">{{ $t('nav.about') }}</NuxtLink></li>
+        <li><NuxtLink :to="'/media'" :class="{ active: $route.path === '/media' }" :data-letters="$t('nav.media')" class="glitch-text">{{ $t('nav.media') }}</NuxtLink></li>
         <li><NuxtLink :to="'/contact'" :class="{ active: $route.path === '/contact' }" :data-letters="$t('nav.contact')" class="glitch-text">{{ $t('nav.contact') }}</NuxtLink></li>
         <li class="grow text-right"><LanguageSwitcher /></li>
       </ul>
@@ -30,6 +31,7 @@
           <li class="nav-link font-bold"><NuxtLink :to="'/'" :class="{ active: $route.path === '/' }">{{ $t('nav.home') }}</NuxtLink></li>
           <li class="nav-link font-bold"><NuxtLink :to="'/about'" :class="{ active: $route.path === '/about' }">{{ $t('nav.about') }}</NuxtLink></li>
           <li class="nav-link font-bold"><NuxtLink :to="'/contact'" :class="{ active: $route.path === '/contact' }">{{ $t('nav.contact') }}</NuxtLink></li>
+          <li class="nav-link font-bold"><NuxtLink :to="'/media'" :class="{ active: $route.path === '/media' }">{{ $t('nav.media') }}</NuxtLink></li>
           <li><LanguageSwitcher /></li>
         </ul>
       </div>
