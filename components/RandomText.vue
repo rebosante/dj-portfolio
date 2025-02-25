@@ -1,5 +1,7 @@
 <template>
-<p class="text-base typewriter mb-6" v-typewriter v-html="randomText" />
+  <h1 v-if="type === 'h1'" class="typewriter" v-typewriter v-html="randomText" />
+  <h2 v-else-if="type === 'h2'" class="typewriter" v-typewriter v-html="randomText" />
+  <p v-else class="text-base typewriter mb-6" v-typewriter v-html="randomText" />
 </template>
   
 <script setup>
@@ -12,6 +14,10 @@
       required: true,
       validator: (value) => value.length > 0, // Ensure the array is not empty
     },
+    type: {
+      type: String,
+      default: 'p'
+    }
   });
   
   // Reactive state for the random text

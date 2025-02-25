@@ -34,9 +34,23 @@
     "name": "Nombre",
     "email": "Email",
     "message": "Mensaje",
-    "other": "Otros"
+    "other": "Otros",
+    "message_whatsapp": "Hola Jay! 🎶 Me encantaría reservarte para mi evento. Quiero crear una experiencia única con tu música y tu vibra. ¿Cuándo estás disponible?"
   },
   "social": {
     "title": "Redes sociales"
+  },
+  "gallery": {
+    "title_1": "Momentos en Movimiento",
+    "title_2": "Detrás de los Decks",
+    "title_3": "Vibra Visual",
+    "title_4": "Galería de Grooves",
+    "title_5": "House Music en Acción",
+    "title_6": "Del Estudio al Escenario",
+    "title_7": "Instantáneas del Ritmo",
+    "title_8": "En Vivo y Sin Filtros",
+    "title_9": "El Viaje del House Music",
+    "title_10": "Capturando el Ritmo",
+    "description": "Adéntrate en mi mundo de house music. Aquí encontrarás una colección de momentos que definen mi trayectoria: sets en vivo, sesiones en el estudio y eventos inolvidables. Desde la energía de la pista de baile hasta la creatividad detrás de los decks, estas imágenes y videos cuentan la historia de mi pasión por la música. ¡Échales un vistazo y siente la vibra!"
   }
 }

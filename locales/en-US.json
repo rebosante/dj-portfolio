@@ -34,9 +34,23 @@
       "name": "Name",
       "email": "Email",
       "message": "Message",
-      "other": "Others"
+      "other": "Others",
+      "message_whatsapp": "Hi Jay! 🎶 I’d love to book you for my event. Let’s create an unforgettable experience with your house music vibes. When are you available?"
     },
     "social": {
       "title": "Social Networks"
+    },
+    "gallery": {
+      "title_1": "Moments in Motion",
+      "title_2": "Behind the Decks",
+      "title_3": "Visual Vibes",
+      "title_4": "Gallery of Grooves",
+      "title_5": "House Music in Action",
+      "title_6": "From the Studio to the Stage",
+      "title_7": "Snapshots of the Beat",
+      "title_8": "Live & Unfiltered",
+      "title_9": "The House Music Journey",
+      "title_10": "Capturing the Rhythm",
+      "description": "Step into my world of house music! Here, you’ll find a collection of moments that define my journey—live sets, studio sessions, and unforgettable events. From the energy of the dancefloor to the creativity behind the decks, these images and videos tell the story of my passion for music. Take a look and feel the vibe!"
     }
   }

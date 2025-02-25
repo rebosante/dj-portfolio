@@ -15,11 +15,10 @@
         </div>
         <button type="submit">Send</button>
       </!-->
-      <div class="grid sm:grid-cols-2 items-start gap-16 mx-auto max-w-4xl font-[sans-serif]">
+      <div class="grid sm:grid-cols-2 items-start gap-16 mx-auto font-[sans-serif]">
             <div>
                 <h1 class="text-3xl font-extrabold">{{ $t('home.contact') }}</h1>
                 <p class="text-base mt-4 typewriter" v-typewriter v-html="$t('contact.basic_txt')" />
-
                 <div class="mt-12">
                     <h2 class="text-2xl font-bold">{{ t('contact.other') }}</h2>
                     <ul class="flex mt-4">
