@@ -8,13 +8,15 @@
       <div class="mx-auto w-full">
         <div class="flex items-center w-full flex-col md:flex-row">
           <!-- First Column (40% width) -->
-          <div class="image-logo">
+          <div class="min-w-[60%] md:min-w-[30%] lg:min-w-[40%]">
             <div class="outer">
-              <div class="logo-pure"></div>
-              <div class="inner glitch">
-                <div class="channel r"></div>
-                <div class="channel g"></div>
-                <div class="channel b"></div>
+              <div class="inner">
+                <div class="logo-pure"></div>
+                <div class="inner glitch">
+                  <div class="channel r"></div>
+                  <div class="channel g"></div>
+                  <div class="channel b"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -438,9 +440,6 @@ import Navigation from "~/components/Navigation.vue";
 }
 
 @media (min-width: 1281px) {
-  .image-logo {
-    width: 40%;
-  }
   .grow {
     width: 60%;
   }

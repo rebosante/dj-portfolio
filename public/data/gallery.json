@@ -1,224 +1,224 @@
 [
     {
-      "size": "851-315",
-      "src": "images/gallery/flanimgos5.jpg",
-      "thumb": "images/gallery/thumbnails/flanimgos5.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "851-315",
+        "src": "images/gallery/beyond.jpg",
+        "thumb": "images/gallery/thumbnails/beyond.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/beyond.jpg",
-      "thumb": "images/gallery/thumbnails/beyond.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "851-315",
+        "src": "images/gallery/cesare_maremonti.jpg",
+        "thumb": "images/gallery/thumbnails/cesare_maremonti.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/cesare_maremonti.jpg",
-      "thumb": "images/gallery/thumbnails/cesare_maremonti.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "851-315",
+        "src": "images/gallery/city.jpg",
+        "thumb": "images/gallery/thumbnails/city.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/flanimgos3.jpg",
-      "thumb": "images/gallery/thumbnails/flanimgos3.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "851-315",
+        "src": "images/gallery/dhago_laradio.jpg",
+        "thumb": "images/gallery/thumbnails/dhago_laradio.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/city.jpg",
-      "thumb": "images/gallery/thumbnails/city.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "1080-1920",
+        "src": "images/gallery/dj-room.jpg",
+        "thumb": "images/gallery/thumbnails/dj-room.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/flanimgos2.jpg",
-      "thumb": "images/gallery/thumbnails/flanimgos2.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "1280-960",
+        "src": "images/gallery/djPeke.jpg",
+        "thumb": "images/gallery/thumbnails/djPeke.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/flanimgos4.jpg",
-      "thumb": "images/gallery/thumbnails/flanimgos4.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "1600-1200",
+        "src": "images/gallery/djing90_n.jpg",
+        "thumb": "images/gallery/thumbnails/djing90_n.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/dhago_laradio.jpg",
-      "thumb": "images/gallery/thumbnails/dhago_laradio.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "851-315",
+        "src": "images/gallery/djsoul_01.jpg",
+        "thumb": "images/gallery/thumbnails/djsoul_01.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/djsoul_01.jpg",
-      "thumb": "images/gallery/thumbnails/djsoul_01.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "851-315",
+        "src": "images/gallery/drLo_Studio_promoGen.jpg",
+        "thumb": "images/gallery/thumbnails/drLo_Studio_promoGen.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/djPeke.jpg",
-      "thumb": "images/gallery/thumbnails/djPeke.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "851-315",
+        "src": "images/gallery/eclyps_fridays.jpg",
+        "thumb": "images/gallery/thumbnails/eclyps_fridays.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/flamingos1.jpg",
-      "thumb": "images/gallery/thumbnails/flamingos1.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "851-315",
+        "src": "images/gallery/feerock.jpg",
+        "thumb": "images/gallery/thumbnails/feerock.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/drLo_Studio_promoGen.jpg",
-      "thumb": "images/gallery/thumbnails/drLo_Studio_promoGen.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "753-1009",
+        "src": "images/gallery/flamingos1.jpg",
+        "thumb": "images/gallery/thumbnails/flamingos1.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/eclyps_fridays.jpg",
-      "thumb": "images/gallery/thumbnails/eclyps_fridays.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "768-757",
+        "src": "images/gallery/flanimgos2.jpg",
+        "thumb": "images/gallery/thumbnails/flanimgos2.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/dj-room.jpg",
-      "thumb": "images/gallery/thumbnails/dj-room.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "1024-768",
+        "src": "images/gallery/flanimgos3.jpg",
+        "thumb": "images/gallery/thumbnails/flanimgos3.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/feerock.jpg",
-      "thumb": "images/gallery/thumbnails/feerock.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "1024-768",
+        "src": "images/gallery/flanimgos4.jpg",
+        "thumb": "images/gallery/thumbnails/flanimgos4.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/flanimgos8.jpg",
-      "thumb": "images/gallery/thumbnails/flanimgos8.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "768-1024",
+        "src": "images/gallery/flanimgos5.jpg",
+        "thumb": "images/gallery/thumbnails/flanimgos5.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/flyer01.jpg",
-      "thumb": "images/gallery/thumbnails/flyer01.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "768-1024",
+        "src": "images/gallery/flanimgos8.jpg",
+        "thumb": "images/gallery/thumbnails/flanimgos8.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/djing90_n.jpg",
-      "thumb": "images/gallery/thumbnails/djing90_n.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "900-333",
+        "src": "images/gallery/flyer01.jpg",
+        "thumb": "images/gallery/thumbnails/flyer01.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/gerald_kenosi.jpg",
-      "thumb": "images/gallery/thumbnails/gerald_kenosi.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "851-315",
+        "src": "images/gallery/gerald_kenosi.jpg",
+        "thumb": "images/gallery/thumbnails/gerald_kenosi.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/hms.jpg",
-      "thumb": "images/gallery/thumbnails/hms.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "851-315",
+        "src": "images/gallery/hms.jpg",
+        "thumb": "images/gallery/thumbnails/hms.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/k_thompson_share.jpg",
-      "thumb": "images/gallery/thumbnails/k_thompson_share.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "851-315",
+        "src": "images/gallery/hms_djs.jpg",
+        "thumb": "images/gallery/thumbnails/hms_djs.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/hms_djs.jpg",
-      "thumb": "images/gallery/thumbnails/hms_djs.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "851-315",
+        "src": "images/gallery/hugoValle2013.jpg",
+        "thumb": "images/gallery/thumbnails/hugoValle2013.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/knuckles.jpg",
-      "thumb": "images/gallery/thumbnails/knuckles.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "783-591",
+        "src": "images/gallery/k_thompson_share.jpg",
+        "thumb": "images/gallery/thumbnails/k_thompson_share.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/hugoValle2013.jpg",
-      "thumb": "images/gallery/thumbnails/hugoValle2013.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "851-315",
+        "src": "images/gallery/kedras.jpg",
+        "thumb": "images/gallery/thumbnails/kedras.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/moveToTheHouse.jpg",
-      "thumb": "images/gallery/thumbnails/moveToTheHouse.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "1920-1080",
+        "src": "images/gallery/knuckles.jpg",
+        "thumb": "images/gallery/thumbnails/knuckles.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/kedras.jpg",
-      "thumb": "images/gallery/thumbnails/kedras.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "1200-552",
+        "src": "images/gallery/leia.jpg",
+        "thumb": "images/gallery/thumbnails/leia.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/leia.jpg",
-      "thumb": "images/gallery/thumbnails/leia.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "851-315",
+        "src": "images/gallery/leoesco.jpg",
+        "thumb": "images/gallery/thumbnails/leoesco.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/onair.jpg",
-      "thumb": "images/gallery/thumbnails/onair.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "851-315",
+        "src": "images/gallery/mixtery.jpg",
+        "thumb": "images/gallery/thumbnails/mixtery.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/leoesco.jpg",
-      "thumb": "images/gallery/thumbnails/leoesco.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "1024-683",
+        "src": "images/gallery/moveToTheHouse.jpg",
+        "thumb": "images/gallery/thumbnails/moveToTheHouse.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/radiography_n.jpg",
-      "thumb": "images/gallery/thumbnails/radiography_n.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "851-315",
+        "src": "images/gallery/olaya_forest.jpg",
+        "thumb": "images/gallery/thumbnails/olaya_forest.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/mixtery.jpg",
-      "thumb": "images/gallery/thumbnails/mixtery.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "1083-609",
+        "src": "images/gallery/onair.jpg",
+        "thumb": "images/gallery/thumbnails/onair.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/sexyBeatz.jpg",
-      "thumb": "images/gallery/thumbnails/sexyBeatz.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "960-980",
+        "src": "images/gallery/radiography_n.jpg",
+        "thumb": "images/gallery/thumbnails/radiography_n.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/olaya_forest.jpg",
-      "thumb": "images/gallery/thumbnails/olaya_forest.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "851-315",
+        "src": "images/gallery/ryanTrumanFinal.jpg",
+        "thumb": "images/gallery/thumbnails/ryanTrumanFinal.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/ryanTrumanFinal.jpg",
-      "thumb": "images/gallery/thumbnails/ryanTrumanFinal.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "1095-730",
+        "src": "images/gallery/sexyBeatz.jpg",
+        "thumb": "images/gallery/thumbnails/sexyBeatz.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/waves_final.jpg",
-      "thumb": "images/gallery/thumbnails/waves_final.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "851-315",
+        "src": "images/gallery/sundayHouse.jpg",
+        "thumb": "images/gallery/thumbnails/sundayHouse.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/sundayHouse.jpg",
-      "thumb": "images/gallery/thumbnails/sundayHouse.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "851-315",
+        "src": "images/gallery/sungirl_.jpg",
+        "thumb": "images/gallery/thumbnails/sungirl_.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     },
     {
-      "size": "851-315",
-      "src": "images/gallery/sungirl_.jpg",
-      "thumb": "images/gallery/thumbnails/sungirl_.jpg",
-      "subHtml": "<h4>Title</h4><p>Descritpion of the pic</p>"
+        "size": "755-560",
+        "src": "images/gallery/waves_final.jpg",
+        "thumb": "images/gallery/thumbnails/waves_final.jpg",
+        "subHtml": "<h4>Title</h4><p>Description of the pic</p>"
     }
 ]

@@ -7,13 +7,13 @@
       <!-- component -->
       <MusicList />
       <SocialLinks />
-      <!-- 
+      <!--
         <LatestNews />
         <NextGigs />
       -->
     </div>
   </template>
-  
+
   <script setup>
   // Import components
   // import LatestNews from '~/components/LatestNews.vue'
@@ -22,17 +22,14 @@
   import SocialLinks from '~/components/SocialLinks.vue'
   import RandomText from '~/components/RandomText.vue'
   import { useI18n } from 'vue-i18n' // Import useI18n
-  /*
-  import Preloader from '~/components/Preloader.vue'
-    const isLoading = ref(false)
-    onBeforeMount(() => {
-      isLoading.value = true
-    })
-    onMounted(() => {
-      isLoading.value = false
-    })
-  */
-
+  // import Preloader from '~/components/Preloader.vue'
+  // const isLoading = ref(false)
+  // onBeforeMount(() => {
+  // isLoading.value = true
+  // })
+  // onMounted(() => {
+  //   isLoading.value = false
+  // })
   const { t } = useI18n()
   const texts = [
     t('welcome.txt_1'),
