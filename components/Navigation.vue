@@ -50,7 +50,7 @@ function toggleMenu() {
   menuOpen.value = !menuOpen.value
 }
 
-const $route = useRoute(); // Get the current route to handle active links
+const $route = useRoute() // Get the current route to handle active links
 </script>
 
 <style scoped>

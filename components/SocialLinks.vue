@@ -1,118 +1,91 @@
-<template>
-    <div class="mt-4">
-                    <h2 class="text-2xl font-extrabold">{{ $t('social.title') }}</h2>
+<script setup>
+import Instagram from '@/components/icons/Instagram.vue'
+import Facebook from '@/components/icons/Facebook.vue'
+import Youtube from '@/components/icons/Youtube.vue'
+import Tiktok from "@/components/icons/Tiktok.vue"
+import Twitch from "@/components/icons/Twitch.vue"
+import Mixcloud from "@/components/icons/Mixcloud.vue"
 
-                    <ul class="flex flex-wrap mt-4">
-                        <li class="flex items-center justify-center shrink-0">
-                            <!-- Instagram -->
-                            <button
-                                type="button"
-                                data-twe-ripple-init
-                                data-twe-ripple-color="light"
-                                class="mb-2 inline-block rounded bg-[#c13584] px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
-                                <span class="[&>svg]:h-4 [&>svg]:w-4">
-                                    <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="currentColor"
-                                    viewBox="0 0 448 512">
-                                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                                    <path
-                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                                    </svg>
-                                </span>
-                            </button>
-                        </li>
-                        <li class="flex items-center justify-center shrink-0">
-                            <!-- Facebook -->
-                            <button
-                                type="button"
-                                data-twe-ripple-init
-                                data-twe-ripple-color="light"
-                                class="mb-2 inline-block rounded bg-[#1877f2] px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
-                                <span class="[&>svg]:h-4 [&>svg]:w-4">
-                                    <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="currentColor"
-                                    viewBox="0 0 320 512">
-                                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                                    <path
-                                        d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
-                                    </svg>
-                                </span>
-                            </button>
-                        </li>
-                        <li class="flex items-center justify-center shrink-0">
-                            <!-- Youtube -->
-                            <button
-                            type="button"
-                            data-twe-ripple-init
-                            data-twe-ripple-color="light"
-                            class="mb-2 inline-block rounded bg-[#ff0000] px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
-                            <span class="[&>svg]:h-4 [&>svg]:w-4">
-                                <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="currentColor"
-                                viewBox="0 0 576 512">
-                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                                <path
-                                    d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
-                                </svg>
-                            </span>
-                            </button>
-                        </li>
-                        <li class="flex items-center justify-center shrink-0">
-                            <!-- TikTok -->
-                            <button
-                            type="button"
-                            data-twe-ripple-init
-                            data-twe-ripple-color="light"
-                            class="mb-2 inline-block rounded bg-[#6a76ac] px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
-                            <span class="[&>svg]:h-4 [&>svg]:w-4">
-                                <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="currentColor"
-                                viewBox="0 0 448 512">
-                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                                <path
-                                    d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z" />
-                                </svg>
-                            </span>
-                            </button>
-                        </li>
-                        <li class="flex items-center justify-center shrink-0">
-                            <!-- Twitch -->
-                            <button
-                            type="button"
-                            data-twe-ripple-init
-                            data-twe-ripple-color="light"
-                            class="mb-2 inline-block rounded bg-[#9146ff] px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
-                            <span class="[&>svg]:h-4 [&>svg]:w-4">
-                                <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="currentColor"
-                                viewBox="0 0 512 512">
-                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                                <path
-                                    d="M391.2 103.5H352.5v109.7h38.6zM285 103H246.4V212.8H285zM120.8 0 24.3 91.4V420.6H140.1V512l96.5-91.4h77.3L487.7 256V0zM449.1 237.8l-77.2 73.1H294.6l-67.6 64v-64H140.1V36.6H449.1z" />
-                                </svg>
-                            </span>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-  </template>
-  
-  <script setup>
-  </script>
-  
-  <style scoped>
-  ul {
-    list-style: none;
-    padding: 0;
+const socialLinks = [
+  {
+    name: 'instagram',
+    url: 'https://www.instagram.com/jaycamdj/',
+    icon: Instagram,
+    bgColor: 'bg-[#c13584]',
+    iconClass: '[&>svg]:h-4 [&>svg]:w-4'
+  },
+  {
+    name: 'facebook',
+    url: 'https://www.facebook.com/mIxApOLiS/',
+    icon: Facebook,
+    bgColor: 'bg-[#1877f2]',
+    iconClass: '[&>svg]:h-4 [&>svg]:w-4'
+  },
+  /* {
+    name: 'youtube',
+    url: 'https://www.youtube.com/mixapolis/',
+    icon: Youtube,
+    bgColor: 'bg-[#ff0000]',
+    iconClass: '[&>svg]:h-4 [&>svg]:w-4'
+  },
+  {
+    name: 'tiktok',
+    url: 'https://www.tiktok.com/mixapolis/',
+    icon: Tiktok,
+    bgColor: 'bg-[#6a76ac]',
+    iconClass: '[&>svg]:h-4 [&>svg]:w-4'
+  }, */
+  {
+    name: 'twitch',
+    url: 'https://www.twitch.com/mixapolis/',
+    icon: Twitch,
+    bgColor: 'bg-[#9146ff]',
+    iconClass: '[&>svg]:h-4 [&>svg]:w-4'
+  },
+  {
+    name: 'mixcloud',
+    url: 'https://www.mixcloud.com/mixapolis/',
+    icon: Mixcloud,
+    bgColor: 'bg-[#4E1DF8]',
+    iconClass: '[&>svg]:h-4 [&>svg]:w-6'
   }
-  li {
-    display: inline;
-    margin-right: 1em;
-  }
-  </style>
-  
+]
+</script>
+
+<template>
+  <div class="mt-4 p-4">
+    <h2 class="text-2xl font-extrabold">{{ $t('social.title') }}</h2>
+
+    <ul class="flex flex-wrap mt-4">
+      <li
+          v-for="(link, index) in socialLinks"
+          :key="index"
+          class="flex items-center justify-center shrink-0"
+      >
+        <a
+            :href="link.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            :aria-label="link.name"
+            class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+            :class="link.bgColor"
+        >
+          <span :class="link.iconClass">
+            <component :is="link.icon" />
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</template>
+
+<style scoped>
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  display: inline;
+  margin-right: 1em;
+}
+</style>

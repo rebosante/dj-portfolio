@@ -27,6 +27,8 @@
               class="text-jayge-200 bg-jayge-900 overflow-y-auto max-h-[600px] rounded-md md:rounded-l-lg md:rounded-r-none relative"
             >
               <NuxtPage class="change-height" />
+              <MusicList />
+              <SocialLinks />
             </div>
           </div>
         </div>
@@ -36,7 +38,9 @@
 </template>
 
 <script setup>
-import Navigation from "~/components/Navigation.vue";
+import Navigation from "~/components/Navigation.vue"
+import MusicList from '~/components/MusicList.vue'
+import SocialLinks from '~/components/SocialLinks.vue'
 </script>
 
 <style scoped lang="css">

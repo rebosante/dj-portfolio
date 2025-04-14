@@ -35,7 +35,12 @@
       "email": "Email",
       "message": "Message",
       "other": "Others",
-      "message_whatsapp": "Hi Jay! 🎶 I’d love to book you for my event. Let’s create an unforgettable experience with your house music vibes. When are you available?"
+      "message_whatsapp": "Hi Jay! 🎶 I’d love to book you for my event. Let’s create an unforgettable experience with your house music vibes. When are you available?",
+      "sent_succesfully": "I've received your message. I'll get back to you shortly.",
+      "error_name_required": "I need to know who you are",
+      "error_valid_email": "Please type a valid email",
+      "error_message_required": "Please type a message",
+      "error_general": "Please fill all fields"
     },
     "social": {
       "title": "Social Networks"

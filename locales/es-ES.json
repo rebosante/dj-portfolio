@@ -35,7 +35,12 @@
     "email": "Email",
     "message": "Mensaje",
     "other": "Otros",
-    "message_whatsapp": "Hola Jay! 🎶 Me encantaría reservarte para mi evento. Quiero crear una experiencia única con tu música y tu vibra. ¿Cuándo estás disponible?"
+    "message_whatsapp": "Hola Jay! 🎶 Me encantaría reservarte para mi evento. Quiero crear una experiencia única con tu música y tu vibra. ¿Cuándo estás disponible?",
+    "sent_succesfully": "He recibido tu mensaje. Te responderé en breve.",
+    "error_name_required": "Necesito saber quién eres",
+    "error_valid_email": "Por favor escribe un email válido",
+    "error_message_required": "Por favor escribe un mensaje",
+    "error_general": "Por favor rellena todos los campos"
   },
   "social": {
     "title": "Redes sociales"

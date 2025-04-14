@@ -5,8 +5,6 @@
       <RandomText :texts="texts" />
       <!-- <p class="text-base typewriter mb-6" v-typewriter v-html="$t('welcome.txt_1')" /> -->
       <!-- component -->
-      <MusicList />
-      <SocialLinks />
       <!--
         <LatestNews />
         <NextGigs />
@@ -17,9 +15,7 @@
   <script setup>
   // Import components
   // import LatestNews from '~/components/LatestNews.vue'
-  import MusicList from '~/components/MusicList.vue'
   // import NextGigs from '~/components/NextGigs.vue'
-  import SocialLinks from '~/components/SocialLinks.vue'
   import RandomText from '~/components/RandomText.vue'
   import { useI18n } from 'vue-i18n' // Import useI18n
   // import Preloader from '~/components/Preloader.vue'

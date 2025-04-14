@@ -53,27 +53,27 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted } from 'vue'
 
-const musicList = ref([]); // Store the list of music items
-const loading = ref(true); // Track loading state
+const musicList = ref([]) // Store the list of music items
+const loading = ref(true) // Track loading state
 
 // Fetch music data from the JSON file
 const fetchMusicData = async () => {
   try {
-    const response = await fetch('/data/music.json'); // Adjust the path if needed
-    musicList.value = await response.json();
+    const response = await fetch('/data/music.json') // Adjust the path if needed
+    musicList.value = await response.json()
   } catch (error) {
-    console.error('Error fetching music data:', error);
+    console.error('Error fetching music data:', error)
   } finally {
-    loading.value = false; // Stop loading
+    loading.value = false // Stop loading
   }
-};
+}
 
 // Fetch data when the component is mounted
 onMounted(() => {
-  fetchMusicData();
-});
+  fetchMusicData()
+})
 </script>
 
 <style scoped>
