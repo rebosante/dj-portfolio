@@ -12,7 +12,7 @@
           <a
             href="https://www.mixcloud.com/mixapolis/"
             target="_blank"
-            class="text-sm font-medium text-jayllow-500 hover:underline dark:text-blue-500"
+            class="text-sm font-medium text-jayllow-500 hover:underline dark:text-blue-500 text-right"
           >
             {{ $t("music.view_all") }}
           </a>

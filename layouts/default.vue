@@ -46,8 +46,40 @@ import SocialLinks from '~/components/SocialLinks.vue'
 import { ref, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
+const { baseMeta, i18nMeta } = useSeoMeta()
 const route = useRoute()
 const sectionsContainer = ref(null)
+
+// Meta estáticos
+useHead({
+  meta: Object.entries(baseMeta).map(([name, content]) => ({ name, content })),
+  link: [
+    { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+    { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+    { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+    { rel: 'manifest', href: '/site.webmanifest' }
+  ]
+})
+
+// Meta dinámicos (reactivo)
+useHead(() => ({
+  title: i18nMeta.title,
+  meta: [
+    { name: 'description', content: i18nMeta.description },
+    { name: 'keywords', content: i18nMeta.keywords },
+    { property: 'og:title', content: i18nMeta.ogTitle },
+    { property: 'og:description', content: i18nMeta.ogDescription },
+    { property: 'og:image', content: i18nMeta.ogImage },
+    { property: 'og:url', content: i18nMeta.ogUrl },
+    { property: 'og:type', content: i18nMeta.ogType },
+    { property: 'og:locale', content: i18nMeta.ogLocale },
+    { name: 'twitter:card', content: i18nMeta.twitterCard },
+    { name: 'twitter:title', content: i18nMeta.twitterTitle },
+    { name: 'twitter:description', content: i18nMeta.twitterDescription },
+    { name: 'twitter:image', content: i18nMeta.twitterImage }
+  ],
+  link: i18nMeta.link
+}))
 
 onMounted(() => {
   watch(

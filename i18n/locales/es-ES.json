@@ -1,4 +1,19 @@
 {
+  "meta": {
+    "title": "JayCam DJ | DJ profesional de House Music para eventos y clubes",
+    "description": "Eleva tu evento con JayCam DJ - Especialista en Soulful, Funky, Jackin', Deep y Afro-Latin House. Sonido underground premium para clubes, fiestas en la playa y eventos de ecstatic dance. Experiencias musicales personalizadas.",
+    "keywords": "DJ, House Music, Soulful House, Funky House, Jackin House, Deep House, Latin House, Afro House, Ecstatic Dance, DJ para eventos, DJ para clubes, DJ para fiestas, música underground, contratar DJ",
+    "og": {
+      "title": "JayCam DJ | Experiencias premium en House Music",
+      "description": "Transforma tu espacio con vibraciones underground de house cuidadosamente seleccionadas. Especialista en ritmos Soulful, Funky y Afro-Latin para públicos exigentes.",
+      "image": "/social-es.jpg"
+    },
+    "twitter": {
+      "title": "JayCam DJ - Tu especialista en Underground House",
+      "description": "Creando viajes musicales inolvidables para clubes, fiestas en la playa y eventos de ecstatic dance. ¡Reserva ahora para tu próximo evento!",
+      "image": "/twitter-es.jpg"
+    }
+  },
   "nav": {
     "home": "Inicio",
     "about": "Info",
