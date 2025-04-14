@@ -26,8 +26,8 @@ export default defineNuxtConfig({
     compilation: {
       strictMessage: false,
     },
-    lazy: false,
-    langDir: './locales',
+    lazy: true,
+    langDir: 'locales',
     strategy: 'no_prefix',
     locales: [
       { code: 'en-US', iso: 'en-US', name: 'English', file: 'en-US.json' },
