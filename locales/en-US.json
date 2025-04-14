@@ -20,7 +20,7 @@
       "txt_6": "House music isn’t just a genre.. It’s a way of life. I’m Jay, and here I share my vision of this sonic journey. From the deepest basslines to the most soulful melodies, welcome to my musical space. Let the rhythm guide you!"
     },
     "music": {
-      "mixcloud": "Some of these sets were recorded at different events and also taken from Mixapolis Radio, a station that I founded in the early 2000s and that remained alive until 2017 when its last broadcast occurred. You can enjoy the official Mixapolis page on  <a class='text-blue-600 hover:underline' href='https://www.mixcloud.com/mixapolis/' target='_blank'>Mixcloud</a>.",
+      "mixcloud": "Some of these sets were recorded at different events and also taken from Mixapolis Radio, a station that I founded in the early 2000s and that remained alive until 2017 when its last broadcast occurred. You can enjoy the official Mixapolis page on  <a class='text-jayllow-500 hover:underline' href='https://www.mixcloud.com/mixapolis/' target='_blank'>Mixcloud</a>.",
       "frame_title": "LISTEN TO MY LATEST SETS RECORDED LIVE",
       "view_all": "View All"
     },
@@ -35,6 +35,7 @@
       "email": "Email",
       "message": "Message",
       "other": "Others",
+      "mail_subject": "Message from my website!! Yeah",
       "message_whatsapp": "Hi Jay! 🎶 I’d love to book you for my event. Let’s create an unforgettable experience with your house music vibes. When are you available?",
       "sent_succesfully": "I've received your message. I'll get back to you shortly.",
       "error_name_required": "I need to know who you are",

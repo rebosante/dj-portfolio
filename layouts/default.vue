@@ -24,9 +24,11 @@
           <div class="grow transition-height min-w-full md:min-w-[unset]">
             <Navigation />
             <div
+                ref="sectionsContainer"
               class="text-jayge-200 bg-jayge-900 overflow-y-auto max-h-[600px] rounded-md md:rounded-l-lg md:rounded-r-none relative"
             >
               <NuxtPage class="change-height" />
+              <hr v-if="route.path !== '/'" class="mb-8 border-jayllow-500"/>
               <MusicList />
               <SocialLinks />
             </div>
@@ -41,6 +43,22 @@
 import Navigation from "~/components/Navigation.vue"
 import MusicList from '~/components/MusicList.vue'
 import SocialLinks from '~/components/SocialLinks.vue'
+import { ref, onMounted, watch } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const sectionsContainer = ref(null)
+
+onMounted(() => {
+  watch(
+      () => route.fullPath,
+      () => {
+        if (sectionsContainer.value) {
+          sectionsContainer.value.scrollTo({ top: 0, behavior: 'smooth' })
+        }
+      }
+  )
+})
 </script>
 
 <style scoped lang="css">

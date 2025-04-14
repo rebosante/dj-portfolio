@@ -20,7 +20,7 @@
     "txt_6": "El house music no es solo un género, es una forma de vida. Soy Jay, y aquí comparto mi visión de este viaje sonoro. Desde los bajos más profundos hasta las melodías más soulful, bienvenido(a) a mi espacio musical. ¡Deja que el ritmo sea tu guía!"
   },
   "music": {
-    "mixcloud": "Algunos de estos sets se grabaron en diferentes eventos y otros se han extraído de Mixapolis Radio, una estación que fundé a principios de los 2000 y que permaneció en vivo hasta 2017, año en el que se produjo su última transmisión. Puedes disfrutar de la página oficial en <a class='text-blue-600 hover:underline' href='https://www.mixcloud.com/mixapolis/' target='_blank'>Mixcloud</a>.",
+    "mixcloud": "Algunos de estos sets se grabaron en diferentes eventos y otros se han extraído de Mixapolis Radio, una estación que fundé a principios de los 2000 y que permaneció en vivo hasta 2017, año en el que se produjo su última transmisión. Puedes disfrutar de la página oficial en <a class='text-jayllow-500 hover:underline' href='https://www.mixcloud.com/mixapolis/' target='_blank'>Mixcloud</a>.",
     "frame_title": "ESCUCHA MIS ÚLTIMOS SETS GRABADOS EN VIVO",
     "view_all": "Ver Todos"
   },
@@ -35,6 +35,7 @@
     "email": "Email",
     "message": "Mensaje",
     "other": "Otros",
+    "mail_subject": "Mensaje desde mi website!! Yeah",
     "message_whatsapp": "Hola Jay! 🎶 Me encantaría reservarte para mi evento. Quiero crear una experiencia única con tu música y tu vibra. ¿Cuándo estás disponible?",
     "sent_succesfully": "He recibido tu mensaje. Te responderé en breve.",
     "error_name_required": "Necesito saber quién eres",

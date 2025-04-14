@@ -13,7 +13,7 @@
                             href="mailto:booking@jaycamdj.com?Subject=Hey%20Jay,%20I%20want%20your%20music"
                             data-twe-ripple-init
                             data-twe-ripple-color="light"
-                            class="mb-2 inline-block rounded bg-[#e7b700] px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
+                            class="mb-2 inline-block rounded bg-jayllow-500 px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
                             <span class="[&>svg]:h-4 [&>svg]:w-4">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -54,8 +54,23 @@
               <textarea v-model.trim="form.message" rows="5" id="contact_message" name="contact_message" class="w-full rounded-md px-4 bg-gray-100 text-sm text-jayge-700 pt-3 outline-blue-500 focus:bg-transparent focus:text-jayge-300" :placeholder="t('contact.message')"></textarea>
                   <span v-if="errors.messageError" class="error text-orange-600">{{ errors.messageError }}</span>
                   <br v-if="errors.generalMessage" />
-                  <span v-if="errors.generalMessage" class="error text-orange-600">{{ errors.generalMessage }}</span>
-              <button type="submit" class="text-white bg-blue-500 hover:bg-blue-600 tracking-wide rounded-md text-sm px-4 py-3 w-full !mt-6">{{ t('contact.send') }}</button>
+                  <span
+                    v-if="errors.generalMessage"
+                    :class="{
+                      'text-green-600': isSuccess,
+                      'text-orange-600': !isSuccess
+                    }"
+                                >
+                    {{ errors.generalMessage }}
+                  </span>
+              <button
+                  type="submit"
+                  :disabled="waiting"
+                  class="text-white bg-jayllow-500 hover:bg-jayllow-600 tracking-wide rounded-md text-sm px-4 py-3 w-full !mt-6 flex justify-center items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                <span v-if="!waiting">{{ t('contact.send') }}</span>
+                <span v-else class="loader-circle" aria-hidden="true"></span>
+              </button>
             </form>
         </div>
     </div>
@@ -80,6 +95,7 @@ const errors = reactive({
   generalMessage: '',
 })
 
+const isSuccess = ref(false)
 const waiting = ref(false)
 const checkFields = ref(false)
 
@@ -115,6 +131,7 @@ const submitForm = async () => {
 
   if (!form.name.trim() || errors.emailError || !form.message.trim()) {
     errors.generalMessage = t('contact.error_general')
+    isSuccess.value = false
     return
   }
 
@@ -127,7 +144,7 @@ const submitForm = async () => {
     method: 'POST',
     body: {
       name: form.name,
-      email: 'booking@jaycamdj.com',
+      email: 'hello@djjaycam.com',
       subject: t('contact.mail_subject'),
       message: form.message + ' ++++ RECEIVED FROM ++++ ' + form.email,
     },
@@ -141,6 +158,7 @@ const submitForm = async () => {
     errors.messageError = ''
     waiting.value = false
     checkFields.value = false
+    isSuccess.value = true
   })
 }
 
@@ -164,5 +182,19 @@ watch(() => form.message, () => {
   li {
     display: inline;
     margin-right: 1em;
+  }
+  .loader-circle {
+    border: 2px solid white;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 0.6s linear infinite;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
   }
   </style>

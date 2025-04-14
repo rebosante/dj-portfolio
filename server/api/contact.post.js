@@ -4,7 +4,7 @@ const config = useRuntimeConfig()
 const transporter = nodemailer.createTransport({
     host: config.MAILHOST,
     port: config.MAILPORT * 1,
-    secure: false,
+    secure: true,
     auth: {
         user: config.MAILUSER,
         pass: config.MAILPASSWORD

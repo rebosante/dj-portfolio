@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="px-4 md:px-['unset']">
     <div class="max-w-4xl mx-auto">
       <div class="text-jayge-200 dark:bg-gray-800 dark:border-gray-700">
         <div class="flex justify-between items-center mb-4">
@@ -12,7 +12,7 @@
           <a
             href="https://www.mixcloud.com/mixapolis/"
             target="_blank"
-            class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500"
+            class="text-sm font-medium text-jayllow-500 hover:underline dark:text-blue-500"
           >
             {{ $t("music.view_all") }}
           </a>
