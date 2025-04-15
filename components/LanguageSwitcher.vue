@@ -5,6 +5,7 @@ import { useI18n } from 'vue-i18n'
 const router = useRouter()
 const route = useRoute()
 const { locales, locale, setLocale } = useI18n()
+const emit = defineEmits(['languageChanged'])
 
 const changeLanguage = async (langCode: string) => {
   await setLocale(langCode) // Update locale
@@ -14,6 +15,7 @@ const changeLanguage = async (langCode: string) => {
     query: { ...route.query },
     hash: route.hash
   })
+  emit('languageChanged')
 }
 </script>
 

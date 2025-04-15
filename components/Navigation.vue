@@ -28,11 +28,11 @@
       </button>
       <div v-if="menuOpen">
         <ul>
-          <li class="nav-link font-bold"><NuxtLink :to="'/'" :class="{ active: $route.path === '/' }">{{ $t('nav.home') }}</NuxtLink></li>
-          <li class="nav-link font-bold"><NuxtLink :to="'/about'" :class="{ active: $route.path === '/about' }">{{ $t('nav.about') }}</NuxtLink></li>
-          <li class="nav-link font-bold"><NuxtLink :to="'/contact'" :class="{ active: $route.path === '/contact' }">{{ $t('nav.contact') }}</NuxtLink></li>
-          <li class="nav-link font-bold"><NuxtLink :to="'/media'" :class="{ active: $route.path === '/media' }">{{ $t('nav.media') }}</NuxtLink></li>
-          <li><LanguageSwitcher /></li>
+          <li class="nav-link font-bold"><NuxtLink :to="'/'" :class="{ active: $route.path === '/' }" @click="menuOpen = false">{{ $t('nav.home') }}</NuxtLink></li>
+          <li class="nav-link font-bold"><NuxtLink :to="'/about'" :class="{ active: $route.path === '/about' }" @click="menuOpen = false">{{ $t('nav.about') }}</NuxtLink></li>
+          <li class="nav-link font-bold"><NuxtLink :to="'/contact'" :class="{ active: $route.path === '/contact' }" @click="menuOpen = false">{{ $t('nav.contact') }}</NuxtLink></li>
+          <li class="nav-link font-bold"><NuxtLink :to="'/media'" :class="{ active: $route.path === '/media' }" @click="menuOpen = false">{{ $t('nav.media') }}</NuxtLink></li>
+          <li><LanguageSwitcher @languageChanged="menuOpen = false" /></li>
         </ul>
       </div>
     </div>
