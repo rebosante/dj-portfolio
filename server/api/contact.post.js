@@ -8,9 +8,6 @@ const transporter = nodemailer.createTransport({
     auth: {
         user: config.MAILUSER,
         pass: config.MAILPASSWORD
-    },
-    tls: {
-        ciphers:'SSLv3'
     }
 })
 export default defineEventHandler(async(event, response) => {

@@ -159,6 +159,11 @@ const submitForm = async () => {
     waiting.value = false
     checkFields.value = false
     isSuccess.value = true
+  }).catch((error) => {
+    console.error('Contact form error:', error)
+    errors.generalMessage = error.data?.message || t('contact.error_general')
+    isSuccess.value = false
+    waiting.value = false
   })
 }
 
