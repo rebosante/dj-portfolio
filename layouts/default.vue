@@ -46,7 +46,7 @@ import SocialLinks from '~/components/SocialLinks.vue'
 import { ref, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
-const { baseMeta, i18nMeta } = useSeoMeta()
+const { baseMeta, i18nMeta } = useSiteMetaTags()
 const route = useRoute()
 const sectionsContainer = ref(null)
 

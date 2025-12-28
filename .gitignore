@@ -21,6 +21,8 @@ logs
 .sh
 /package-lock.json
 package-lock.json
+public/.well-known
+public/.well-known/*
 
 # Local env files
 .env

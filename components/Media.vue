@@ -82,20 +82,7 @@ onMounted(async () => {
 })
 </script>
   
-  <style>
-  /* Copia y pega los estilos CSS que proporcionaste aquí */
-  /*
-  @import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery.css');
-  @import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-zoom.css');
-  @import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-video.css');
-  @import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-thumbnail.css');
-  */
-
-  @import url('public/styles/lightgallery.css');
-  @import url('public/styles/lg-zoom.css');
-  @import url('public/styles/lg-video.css');
-  @import url('public/styles/lg-thumbnail.css');
-  
+  <style scoped>
   .gallery {
     max-width: 800px;
     margin: 0 auto;

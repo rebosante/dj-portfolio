@@ -35,14 +35,11 @@ export default {
           800: '#413e36',
           900: '#161512',
         },
-        // Add more custom colors here
       },
-      gridTemplateColumns:
-      {
+      gridTemplateColumns: {
         '40/60': '40% 60%'
       }
     },
   },
-  plugins: [],
 }
 

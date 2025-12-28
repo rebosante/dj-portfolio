@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --jay-yellow: #e7b700;
@@ -75,7 +73,7 @@ html {
 }
 
 body {
-    background-color: aquamarine;
+    background-color: whitesmoke;
     font-family: 'Jay P', Arial, sans-serif;
     margin: 0;
     padding: 0;

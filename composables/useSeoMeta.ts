@@ -1,4 +1,4 @@
-export const useSeoMeta = () => {
+export const useSiteMetaTags = () => {
     const { t, locale } = useI18n()
     const route = useRoute()
     const config = useRuntimeConfig()
