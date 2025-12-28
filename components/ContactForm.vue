@@ -1,5 +1,5 @@
 <template>
-    <div class="p-4">
+    <div>
       <div class="grid sm:grid-cols-2 items-start gap-16 mx-auto font-[sans-serif]">
             <div>
                 <h1 class="text-3xl font-extrabold">{{ $t('home.contact') }}</h1>
@@ -66,7 +66,7 @@
               <button
                   type="submit"
                   :disabled="waiting"
-                  class="text-white bg-jayllow-500 hover:bg-jayllow-600 tracking-wide rounded-md text-sm px-4 py-3 w-full !mt-6 flex justify-center items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                  class="text-white bg-jayllow-500 hover:bg-jayllow-600 tracking-wide rounded-md text-sm px-4 py-3 w-full mt-6! flex justify-center items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <span v-if="!waiting">{{ t('contact.send') }}</span>
                 <span v-else class="loader-circle" aria-hidden="true"></span>

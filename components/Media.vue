@@ -1,5 +1,5 @@
   <template>
-    <div class="rounded-md md:rounded-l-lg md:rounded-r-none p-2">
+    <div class="rounded-md md:rounded-l-lg md:rounded-r-none">
       <RandomText class="text-3xl font-extrabold mb-4" type="h1" :texts="texts" />
       <div class="text-base typewriter mb-6" v-typewriter v-html="$t('gallery.description')" />
       <div ref="gallery" class="gallery">

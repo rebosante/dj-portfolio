@@ -10,12 +10,17 @@ export default defineNuxtConfig({
   css: [
     '@/assets/css/main.css'
   ],
+  postcss: {
+    plugins: {
+      '@tailwindcss/postcss': {},
+    },
+  },
   modules: ['@nuxtjs/i18n'],
   i18n: {
     compilation: {
       strictMessage: false,
     },
-    lazy: true,
+    // lazy: true,
     langDir: 'locales',
     strategy: 'no_prefix',
     locales: [
