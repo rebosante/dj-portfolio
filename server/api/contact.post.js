@@ -12,7 +12,14 @@ const transporter = nodemailer.createTransport({
 })
 export default defineEventHandler(async(event, response) => {
     try {
-        const body = await readBody(event)
+        let body
+        try {
+            const rawBody = await readRawBody(event)
+            body = JSON.parse(rawBody || '{}')
+        } catch (parseError) {
+            // Fallback for request body reading issues
+            body = await readBody(event)
+        }
 
         // verify connection configuration
         await transporter.verify(function (error, success) {
