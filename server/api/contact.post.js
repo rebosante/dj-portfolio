@@ -10,15 +10,35 @@ const transporter = nodemailer.createTransport({
         pass: config.MAILPASSWORD
     }
 })
-export default defineEventHandler(async(event, response) => {
+export default defineEventHandler(async(event) => {
     try {
-        // In production (Vercel), body is already parsed in event.node.req.body
-        // In development, use readBody()
+        // Parse body - handle both local dev and serverless environments
         let body
-        if (process.env.NODE_ENV === 'production' || event.node.req.body) {
-            body = event.node.req.body
-        } else {
-            body = await readBody(event)
+        try {
+            // Try to get body from various sources
+            if (event.node && event.node.req && event.node.req.body) {
+                // Already parsed body (some serverless environments)
+                body = event.node.req.body
+            } else if (event.body) {
+                // Direct body property
+                body = event.body
+            } else {
+                // Parse from request (development)
+                body = await readBody(event)
+            }
+        } catch (e) {
+            console.error('Body parsing error:', e)
+            throw createError({ 
+                statusCode: 400, 
+                message: 'Failed to parse request body' 
+            })
+        }
+
+        if (!body) {
+            throw createError({ 
+                statusCode: 400, 
+                message: 'Request body is empty' 
+            })
         }
 
         // verify connection configuration
