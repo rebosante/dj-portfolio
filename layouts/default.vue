@@ -65,6 +65,7 @@ useHead({
 useHead(() => ({
   title: i18nMeta.title,
   meta: [
+    { name: 'title', content: i18nMeta.title },
     { name: 'description', content: i18nMeta.description },
     { name: 'keywords', content: i18nMeta.keywords },
     { property: 'og:title', content: i18nMeta.ogTitle },
