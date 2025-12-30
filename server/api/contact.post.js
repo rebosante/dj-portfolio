@@ -14,7 +14,7 @@ export default defineEventHandler(async(event, response) => {
     try {
         // Use readRawBody for Vercel Lambda compatibility
         const rawBody = await readRawBody(event)
-        const body = JSON.parse(rawBody || '{}')
+        const body = event.node.req.body || JSON.parse(rawBody || '{}')
 
         // verify connection configuration
         await transporter.verify(function (error, success) {
