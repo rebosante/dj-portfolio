@@ -15,6 +15,11 @@ export default defineEventHandler(async(event) => {
         // Robust body parsing that works on Vercel Lambda (no readBody/readRawBody)
         const body = await parseBody(event)
 
+        const verification = await verifyTurnstileToken(body.turnstileToken)
+        if (!verification?.success) {
+            throw createError({ statusCode: 400, message: 'Captcha verification failed.' })
+        }
+
         // verify connection configuration
         await transporter.verify(function (error, success) {
             if (error) {
@@ -78,6 +83,11 @@ async function parseBody(event) {
 
 async function isValid(body) {
     const errors = []
+    if (validator.isEmpty(body.turnstileToken || ''))
+    errors.push({
+        field: 'turnstileToken',
+        error: 'Field is required.'
+    })
     if (validator.isEmpty(body.email || ''))
     errors.push({
         field: 'email',
@@ -107,6 +117,7 @@ async function isValid(body) {
         return Promise.reject(errors)
     } else {
         return Promise.resolve({
+            turnstileToken: body.turnstileToken,
             email: validator.normalizeEmail(body.email),
             subject: validator.escape(body.subject),
             name: validator.escape(body.name),
@@ -114,3 +125,5 @@ async function isValid(body) {
         })
     }
 }
+
+// verifyTurnstileToken is auto-imported by @nuxtjs/turnstile

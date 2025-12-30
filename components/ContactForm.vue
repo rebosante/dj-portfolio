@@ -63,6 +63,12 @@
                                 >
                     {{ errors.generalMessage }}
                   </span>
+              <ClientOnly>
+                <div class="mt-2 space-y-2">
+                  <NuxtTurnstile v-model="turnstileToken" ref="turnstileRef" />
+                  <span v-if="errors.captchaError" class="error text-orange-600">{{ errors.captchaError }}</span>
+                </div>
+              </ClientOnly>
               <button
                   type="submit"
                   :disabled="waiting"
@@ -77,7 +83,7 @@
   </template>
 
   <script setup lang="ts">
-import { ref, reactive, watch, computed } from 'vue'
+import { reactive, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
@@ -92,12 +98,15 @@ const errors = reactive({
   nameError: '',
   emailError: '',
   messageError: '',
+  captchaError: '',
   generalMessage: '',
 })
 
 const isSuccess = ref(false)
 const waiting = ref(false)
 const checkFields = ref(false)
+const turnstileToken = ref('')
+const turnstileRef = ref<any>(null)
 
 // Function to validate the name
 const validateName = () => {
@@ -120,6 +129,12 @@ const getLinkWhatsApp = (number: string, message: string) => {
   return `https://api.whatsapp.com/send?phone=${number}&text=${encodeURIComponent(message)}`
 }
 
+const resetTurnstile = () => {
+  turnstileRef.value?.reset?.()
+  turnstileToken.value = ''
+  errors.captchaError = ''
+}
+
 // Form submission handler
 const submitForm = async () => {
   checkFields.value = true
@@ -128,6 +143,13 @@ const submitForm = async () => {
   validateName()
   validateEmail()
   validateMessage()
+
+  if (!turnstileToken.value) {
+    errors.captchaError = 'Please verify you are human.'
+    errors.generalMessage = 'Please verify you are human.'
+    isSuccess.value = false
+    return
+  }
 
   if (!form.name.trim() || errors.emailError || !form.message.trim()) {
     errors.generalMessage = t('contact.error_general')
@@ -147,6 +169,7 @@ const submitForm = async () => {
       email: 'hello@djjaycam.com',
       subject: t('contact.mail_subject'),
       message: form.message + ' ++++ RECEIVED FROM ++++ ' + form.email,
+      turnstileToken: turnstileToken.value,
     },
   }).then(() => {
     form.name = ''
@@ -156,14 +179,17 @@ const submitForm = async () => {
     errors.nameError = ''
     errors.emailError = ''
     errors.messageError = ''
+    errors.captchaError = ''
     waiting.value = false
     checkFields.value = false
     isSuccess.value = true
+    resetTurnstile()
   }).catch((error) => {
     console.error('Contact form error:', error)
     errors.generalMessage = error.data?.message || t('contact.error_general')
     isSuccess.value = false
     waiting.value = false
+    resetTurnstile()
   })
 }
 
