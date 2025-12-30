@@ -12,9 +12,14 @@ const transporter = nodemailer.createTransport({
 })
 export default defineEventHandler(async(event, response) => {
     try {
-        // Use readRawBody for Vercel Lambda compatibility
-        const rawBody = await readRawBody(event)
-        const body = event.node.req.body || JSON.parse(rawBody || '{}')
+        // In production (Vercel), body is already parsed in event.node.req.body
+        // In development, use readBody()
+        let body
+        if (process.env.NODE_ENV === 'production' || event.node.req.body) {
+            body = event.node.req.body
+        } else {
+            body = await readBody(event)
+        }
 
         // verify connection configuration
         await transporter.verify(function (error, success) {
