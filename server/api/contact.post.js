@@ -12,34 +12,8 @@ const transporter = nodemailer.createTransport({
 })
 export default defineEventHandler(async(event) => {
     try {
-        // Parse body - handle both local dev and serverless environments
-        let body
-        try {
-            // Try to get body from various sources
-            if (event.node && event.node.req && event.node.req.body) {
-                // Already parsed body (some serverless environments)
-                body = event.node.req.body
-            } else if (event.body) {
-                // Direct body property
-                body = event.body
-            } else {
-                // Parse from request (development)
-                body = await readBody(event)
-            }
-        } catch (e) {
-            console.error('Body parsing error:', e)
-            throw createError({ 
-                statusCode: 400, 
-                message: 'Failed to parse request body' 
-            })
-        }
-
-        if (!body) {
-            throw createError({ 
-                statusCode: 400, 
-                message: 'Request body is empty' 
-            })
-        }
+        // Robust body parsing that works on Vercel Lambda (no readBody/readRawBody)
+        const body = await parseBody(event)
 
         // verify connection configuration
         await transporter.verify(function (error, success) {
@@ -72,6 +46,35 @@ export default defineEventHandler(async(event) => {
         throw createError({ statusCode: 400, message: error})
     }
 })
+
+async function parseBody(event) {
+    // 1) If Vercel already parsed it
+    const parsed = event?.node?.req?.body || event?.body
+    if (parsed) return parsed
+
+    // 2) Manual stream read (compatible with Vercel/Edge where req.text() is missing)
+    const req = event?.node?.req
+    if (!req) {
+        throw createError({ statusCode: 400, message: 'Request object missing' })
+    }
+
+    const raw = await new Promise((resolve, reject) => {
+        let data = ''
+        req.on('data', (chunk) => { data += chunk })
+        req.on('end', () => resolve(data))
+        req.on('error', reject)
+    })
+
+    if (!raw) {
+        throw createError({ statusCode: 400, message: 'Request body is empty' })
+    }
+
+    try {
+        return JSON.parse(raw)
+    } catch (err) {
+        throw createError({ statusCode: 400, message: 'Invalid JSON body' })
+    }
+}
 
 async function isValid(body) {
     const errors = []
