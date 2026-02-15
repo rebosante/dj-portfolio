@@ -28,3 +28,7 @@ public/.well-known/*
 .env
 .env.*
 !.env.example
+
+.agents
+.github
+.agents/*
