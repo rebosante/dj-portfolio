@@ -32,3 +32,4 @@ public/.well-known/*
 .agents
 .github
 .agents/*
+.github/*
